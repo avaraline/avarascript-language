@@ -1,0 +1,25 @@
+{
+    "name": "avarascript-language",
+    "displayName": "AvaraScript Language",
+    "description": "Syntax highlighting for the AvaraScript language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "avarascript",
+            "aliases": ["AvaraScript", "avarascript"],
+            "extensions": [".avarascript"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "avarascript",
+            "scopeName": "source.avarascript",
+            "path": "./syntaxes/avarascript.tmLanguage.json"
+        }]
+    }
+}
